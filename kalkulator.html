@@ -1,0 +1,45 @@
+<!--nama file calc.php-->
+<!DOCTYPE>
+<html>
+<head>
+ <title>Kalkulator</title>
+ <style >
+  .tombol{
+   background-color: deepskyblue;
+  }
+  .tabel{
+   background-color: gold;
+   margin: 10px;
+   padding: 10px;
+  }
+ </style>
+</head>
+<body>
+ <form name="calculator" >
+  
+  <table style="background-color :aqua" class="tabel" >
+   <caption>Kalkulatorku</caption>
+   <tr>
+    <td>Angka 1</td><td>:</td><td><input type="number" name="a1"></td>
+   </tr>
+   <tr>
+    <td>Angka 2</td><td>:</td><td><input type="number" name="a2"></td>
+   </tr>
+   <tr>
+    <td>Hasil</td><td>:</td><td><input type="number" name="hasil" disabled ></td>
+   </tr>
+   <tr>
+    <td colspan="3" align="center">
+     <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+     <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+     <input class="tombol" type="button" onclick="kali()" value="  *  ">
+     <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+     <input class="tombol" type="button" onclick="akar()" value="  ^  ">
+     <input type="button" name="batal" value="Batal" onclick="kosongAll()" />
+    </td>
+   </tr>
+  </table>
+ </form>
+ <script src="kalkulator.js"></script>
+</body>
+</html>
