@@ -40,9 +40,10 @@
    </tr>
   </table>
  </form>
- <script src="kalkulator.js"></script>
+ 
 </body>
 </html>
+<script>
     function tambah(){
      var a1=parseFloat(document.calculator.a1.value);
      var a2=parseFloat(document.calculator.a2.value);
@@ -79,3 +80,4 @@
      var hasil= a1/a2;
      document.calculator.hasil.value="";
     }
+</script>
