@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>Play Sound on :hover</title>
+	
+	<link rel='stylesheet' href='css/style.css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    
+</head>
+
+<body>
+   
+   	<div id="anak ayam" width="10%" height="5">
+		<section id="one"><div class="inside">
+		<ul id="nav-one" class="nav" >
+		   <li >
+            
+		   	<a href="#">Suara anak ayam</a>Anak Ayam 
+		   	<audio id="beep-one">
+				<source src="audio/anak ayam.mp3"></source>
+				<source src="audio/anak ayam.ogg"></source>
+				
+			</audio>
+			</li>
+		</ul>
+		<script>var beepOne = $("#beep-one")[0];
+$("#nav-one a")
+	.mouseenter(function() {
+		beepOne.play();
+	});
+    $("#nav-one a").mouseover(function () {
+                    $(this).css({
+                        background: "blue"
+                    });
+                });
+                $("#nav-one a").mouseout(function () {
+                    $(this).css({
+                        background: "url('data:image/jpeg;base64,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')"
+                    });
+                });
+                
+    </script> 
+     </div></section>
+                    
+     <section id="gajah"><div class="inside">
+             
+     <ul id="nav-two" class="nav">
+        <li>
+            <a href="#">Suara Gajah</a>Gajah
+            <audio id="beep-two" >
+             <source src="audio/suara gajah.mp3"></source>
+             <source src="audio/suara gajah.ogg"></source>
+            
+         </audio>
+         </li>
+        
+     </ul>
+		<script>var beepTwo = $("#beep-two")[0];
+            $("#nav-two a")
+                .mouseenter(function() {
+                    beepThree.pause();
+                    beepThree.play();
+                });
+                $("#nav-two a").mouseover(function () {
+                    $(this).css({
+                        background: "blue"
+                    });
+                });
+                $("#nav-two a").mouseout(function () {
+                    $(this).css({
+                        background: "url('https://www.matain.id/cdncontents/image/2019/0910/034239400_1540813522-gajah_400.jpg')"
+                        
+                
+                    });
+                });
+                </script>
+                    
+                   
+				
+		
+				
+</body>
+
+</html>
